@@ -10,12 +10,24 @@ endif
 
 let g:colors_name = "predawn"
 
+" JonRdA changes to look alike the used sublime settings
+" Function calling, dot notation calling orange
+hi pythonFunctionCall ctermfg=215 ctermbg=NONE cterm=NONE guifg=#282828 guibg=#f18260 gui=NONE
+" Coloring of 'self', 'cls' words
+hi pythonClassVar ctermfg=215 ctermbg=NONE cterm=NONE guifg=#282828 guibg=#f18260 gui=NONE
+" Custom built-in names '__main__' etc
+hi pythonBuiltinObj ctermfg=109 ctermbg=NONE cterm=NONE guifg=#282828 guibg=#f18260 gui=NONE
+" Custom coloring of strings, green
+hi String ctermfg=149 ctermbg=NONE cterm=NONE guifg=#bddcdc guibg=NONE gui=NONE
+" Operators in orange
+hi Operator ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
+
 hi Cursor ctermfg=235 ctermbg=209 cterm=NONE guifg=#282828 guibg=#f18260 gui=NONE
 hi Visual ctermfg=NONE ctermbg=239 cterm=NONE guifg=NONE guibg=#4c4c4c gui=NONE
 hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3c3c gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3c3c gui=NONE
 hi ColorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3c3c gui=NONE
-hi LineNr ctermfg=245 ctermbg=016 cterm=NONE guifg=#8d8d8d guibg=#3c3c3c gui=NONE
+hi LineNr ctermfg=242 ctermbg=234 cterm=NONE guifg=#8d8d8d guibg=#3c3c3c gui=NONE
 hi ColorColumn ctermbg=235
 hi VertSplit ctermfg=241 ctermbg=241 cterm=NONE guifg=#626262 guibg=#626262 gui=NONE
 hi MatchParen ctermfg=215 ctermbg=NONE cterm=bold guifg=#f49d62 guibg=NONE gui=underline
@@ -28,7 +40,7 @@ hi Search ctermfg=NONE ctermbg=241 cterm=NONE guifg=NONE guibg=#626262 gui=NONE
 hi Directory ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
 hi Folded ctermfg=243 ctermbg=235 cterm=NONE guifg=#777777 guibg=#282828 gui=NONE
 
-hi Normal ctermfg=231 ctermbg=016 cterm=NONE guifg=#f1f1f1 guibg=#282828 gui=NONE
+hi Normal ctermfg=254 ctermbg=016 cterm=NONE guifg=#f1f1f1 guibg=#282828 gui=NONE
 hi Boolean ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
 hi Character ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
 hi Comment ctermfg=243 ctermbg=NONE cterm=NONE guifg=#777777 guibg=NONE gui=NONE
@@ -48,13 +60,13 @@ hi Keyword ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi Label ctermfg=152 ctermbg=NONE cterm=NONE guifg=#bddcdc guibg=NONE gui=NONE
 hi NonText ctermfg=235 ctermbg=235 cterm=NONE guifg=#282828 guibg=#282828 gui=NONE
 hi Number ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
-hi Operator ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
+"hi Operator ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi PreProc ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi Special ctermfg=231 ctermbg=NONE cterm=NONE guifg=#f1f1f1 guibg=NONE gui=NONE
 hi SpecialKey ctermfg=209 ctermbg=237 cterm=NONE guifg=#f18260 guibg=#3c3c3c gui=NONE
 hi Statement ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi StorageClass ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
-hi String ctermfg=152 ctermbg=NONE cterm=NONE guifg=#bddcdc guibg=NONE gui=NONE
+"hi String ctermfg=152 ctermbg=NONE cterm=NONE guifg=#bddcdc guibg=NONE gui=NONE
 hi Tag ctermfg=109 ctermbg=NONE cterm=NONE guifg=#92bfbf guibg=NONE gui=NONE
 hi Title ctermfg=231 ctermbg=NONE cterm=bold guifg=#f1f1f1 guibg=NONE gui=bold
 hi Todo ctermfg=243 ctermbg=NONE cterm=inverse,bold guifg=#777777 guibg=NONE gui=inverse,bold
