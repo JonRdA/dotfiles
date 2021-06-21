@@ -12,19 +12,38 @@ let g:colors_name = "predawn"
 
 " JonRdA changes to look alike the used sublime settings
 " Function calling, dot notation calling orange
-hi pythonFunctionCall ctermfg=215 ctermbg=NONE cterm=NONE guifg=#282828 guibg=#f18260 gui=NONE
+hi pythonFunctionCall ctermfg=215 ctermbg=NONE cterm=NONE
 " Coloring of 'self', 'cls' words
-hi pythonClassVar ctermfg=215 ctermbg=NONE cterm=NONE guifg=#282828 guibg=#f18260 gui=NONE
+hi pythonClassVar ctermfg=215 ctermbg=NONE cterm=NONE
 " Custom built-in names '__main__' etc
-hi pythonBuiltinObj ctermfg=109 ctermbg=NONE cterm=NONE guifg=#282828 guibg=#f18260 gui=NONE
+hi pythonBuiltinObj ctermfg=109 ctermbg=NONE cterm=NONE
+" Built in functions, 'range', 'print' etc in orange
+hi pythonBuiltinFunc ctermfg=215 ctermbg=NONE cterm=NONE
+
 " Custom coloring of strings, green
-hi String ctermfg=149 ctermbg=NONE cterm=NONE guifg=#bddcdc guibg=NONE gui=NONE
+hi String ctermfg=149 ctermbg=NONE cterm=NONE
 " Operators in orange
-hi Operator ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
+hi Operator ctermfg=215 ctermbg=NONE cterm=NONE
+" Cursor line lighter
+hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
+" White number, black background in cursor line
+hi CursorLineNR ctermfg=231 ctermbg=016 cterm=NONE
+
+
+" Markdown titles in green
+hi htmlH1 ctermfg=109 ctermbg=NONE
+hi htmlH2 ctermfg=109 ctermbg=NONE
+hi htmlH3 ctermfg=109 ctermbg=NONE
+hi htmlH4 ctermfg=109 ctermbg=NONE
+" Code, list markers, bold & italic colors
+hi markdownCode ctermfg=149
+hi markdownListMarker ctermfg=215
+hi markdownBold ctermfg=228 ctermbg=NONE cterm=bold
+hi markdownItalic ctermfg=228 ctermbg=NONE cterm=italic
+
 
 hi Cursor ctermfg=235 ctermbg=209 cterm=NONE guifg=#282828 guibg=#f18260 gui=NONE
 hi Visual ctermfg=NONE ctermbg=239 cterm=NONE guifg=NONE guibg=#4c4c4c gui=NONE
-hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3c3c gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3c3c gui=NONE
 hi ColorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3c3c gui=NONE
 hi LineNr ctermfg=242 ctermbg=234 cterm=NONE guifg=#8d8d8d guibg=#3c3c3c gui=NONE
@@ -60,13 +79,11 @@ hi Keyword ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi Label ctermfg=152 ctermbg=NONE cterm=NONE guifg=#bddcdc guibg=NONE gui=NONE
 hi NonText ctermfg=235 ctermbg=235 cterm=NONE guifg=#282828 guibg=#282828 gui=NONE
 hi Number ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
-"hi Operator ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi PreProc ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi Special ctermfg=231 ctermbg=NONE cterm=NONE guifg=#f1f1f1 guibg=NONE gui=NONE
 hi SpecialKey ctermfg=209 ctermbg=237 cterm=NONE guifg=#f18260 guibg=#3c3c3c gui=NONE
 hi Statement ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi StorageClass ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
-"hi String ctermfg=152 ctermbg=NONE cterm=NONE guifg=#bddcdc guibg=NONE gui=NONE
 hi Tag ctermfg=109 ctermbg=NONE cterm=NONE guifg=#92bfbf guibg=NONE gui=NONE
 hi Title ctermfg=231 ctermbg=NONE cterm=bold guifg=#f1f1f1 guibg=NONE gui=bold
 hi Todo ctermfg=243 ctermbg=NONE cterm=inverse,bold guifg=#777777 guibg=NONE gui=inverse,bold
