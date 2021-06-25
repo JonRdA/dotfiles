@@ -98,7 +98,7 @@ else
 fi;
 
 # Set the terminal title to the current working directory.
-PS1="\[\033]0;\w\007\]";
+PS1="\[\033]0;\W\007\]";
 PS1+="\\n"; # newline
 #PS1+="\[${bold}\]\n"; # newline deleted by JonRdA
 PS1+="\[${userStyle}\]\u"; # username
