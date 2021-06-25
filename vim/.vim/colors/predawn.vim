@@ -19,9 +19,11 @@ hi pythonClassVar ctermfg=215 ctermbg=NONE cterm=NONE
 hi pythonBuiltinObj ctermfg=109 ctermbg=NONE cterm=NONE
 " Built in functions, 'range', 'print' etc in orange
 hi pythonBuiltinFunc ctermfg=215 ctermbg=NONE cterm=NONE
+" Decorator orange not working!!
+hi pythonDecorator ctermfg=215 ctermbg=NONE cterm=NONE
 
 " Custom coloring of strings, green
-hi String ctermfg=149 ctermbg=NONE cterm=NONE
+hi String ctermfg=148 ctermbg=NONE cterm=NONE
 " Operators in orange
 hi Operator ctermfg=215 ctermbg=NONE cterm=NONE
 " Cursor line lighter
@@ -36,7 +38,7 @@ hi htmlH2 ctermfg=109 ctermbg=NONE
 hi htmlH3 ctermfg=109 ctermbg=NONE
 hi htmlH4 ctermfg=109 ctermbg=NONE
 " Code, list markers, bold & italic colors
-hi markdownCode ctermfg=149
+hi markdownCode ctermfg=148
 hi markdownListMarker ctermfg=215
 hi markdownBold ctermfg=228 ctermbg=NONE cterm=bold
 hi markdownItalic ctermfg=228 ctermbg=NONE cterm=italic
@@ -59,7 +61,7 @@ hi Search ctermfg=NONE ctermbg=241 cterm=NONE guifg=NONE guibg=#626262 gui=NONE
 hi Directory ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
 hi Folded ctermfg=243 ctermbg=235 cterm=NONE guifg=#777777 guibg=#282828 gui=NONE
 
-hi Normal ctermfg=254 ctermbg=016 cterm=NONE guifg=#f1f1f1 guibg=#282828 gui=NONE
+hi Normal ctermfg=253 ctermbg=016 cterm=NONE guifg=#f1f1f1 guibg=#282828 gui=NONE
 hi Boolean ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
 hi Character ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
 hi Comment ctermfg=243 ctermbg=NONE cterm=NONE guifg=#777777 guibg=NONE gui=NONE

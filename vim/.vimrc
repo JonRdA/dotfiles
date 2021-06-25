@@ -2,7 +2,7 @@
 set expandtab           " tabs are spaces
 set softtabstop=4       " number of spaces
 set autoindent          " previous line's level
-"set shiftwidth=4        " tab size for auto indentation
+set shiftwidth=4        " tab size for auto indentation
 
 
 " User interface settings
@@ -10,9 +10,6 @@ set number
 set colorcolumn=79
 set cursorline
 colorscheme predawn
-
-" Highlight matching [{()}]
-set showmatch
 
 " Show command in bottom right bar
 set showcmd
