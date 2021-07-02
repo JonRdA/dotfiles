@@ -10,46 +10,15 @@ endif
 
 let g:colors_name = "predawn"
 
-" JonRdA changes to look alike the used sublime settings
-" Function calling, dot notation calling orange
-hi pythonFunctionCall ctermfg=215 ctermbg=NONE cterm=NONE
-" Coloring of 'self', 'cls' words
-hi pythonClassVar ctermfg=215 ctermbg=NONE cterm=NONE
-" Custom built-in names '__main__' etc
-hi pythonBuiltinObj ctermfg=109 ctermbg=NONE cterm=NONE
-" Built in functions, 'range', 'print' etc in orange
-hi pythonBuiltinFunc ctermfg=215 ctermbg=NONE cterm=NONE
-" Decorator orange not working!!
-hi pythonDecorator ctermfg=215 ctermbg=NONE cterm=NONE
-
-" Custom coloring of strings, green
-hi String ctermfg=148 ctermbg=NONE cterm=NONE
-" Operators in orange
-hi Operator ctermfg=215 ctermbg=NONE cterm=NONE
-" Cursor line lighter
-hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
-" White number, black background in cursor line
-hi CursorLineNR ctermfg=231 ctermbg=016 cterm=NONE
-
-
-" Markdown titles in green
-hi htmlH1 ctermfg=109 ctermbg=NONE
-hi htmlH2 ctermfg=109 ctermbg=NONE
-hi htmlH3 ctermfg=109 ctermbg=NONE
-hi htmlH4 ctermfg=109 ctermbg=NONE
-" Code, list markers, bold & italic colors
-hi markdownCode ctermfg=148
-hi markdownListMarker ctermfg=215
-hi markdownBold ctermfg=228 ctermbg=NONE cterm=bold
-hi markdownItalic ctermfg=228 ctermbg=NONE cterm=italic
-
-
 hi Cursor ctermfg=235 ctermbg=209 cterm=NONE guifg=#282828 guibg=#f18260 gui=NONE
 hi Visual ctermfg=NONE ctermbg=239 cterm=NONE guifg=NONE guibg=#4c4c4c gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3c3c gui=NONE
 hi ColorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3c3c gui=NONE
 hi LineNr ctermfg=242 ctermbg=234 cterm=NONE guifg=#8d8d8d guibg=#3c3c3c gui=NONE
-hi ColorColumn ctermbg=235
+hi CursorLineNR ctermfg=231 ctermbg=016 cterm=NONE
+hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
+hi ColorColumn ctermbg=234
+hi Visual ctermfg=NONE ctermbg=234
 hi VertSplit ctermfg=241 ctermbg=241 cterm=NONE guifg=#626262 guibg=#626262 gui=NONE
 hi MatchParen ctermfg=215 ctermbg=NONE cterm=bold guifg=#f49d62 guibg=NONE gui=underline
 hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f1f1f1 guibg=#626262 gui=bold
@@ -64,6 +33,8 @@ hi Folded ctermfg=243 ctermbg=235 cterm=NONE guifg=#777777 guibg=#282828 gui=NON
 hi Normal ctermfg=253 ctermbg=016 cterm=NONE guifg=#f1f1f1 guibg=#282828 gui=NONE
 hi Boolean ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
 hi Character ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
+hi String ctermfg=148 ctermbg=NONE cterm=NONE
+hi Operator ctermfg=215 ctermbg=NONE cterm=NONE
 hi Comment ctermfg=243 ctermbg=NONE cterm=NONE guifg=#777777 guibg=NONE gui=NONE
 hi Conditional ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi Constant ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
@@ -90,6 +61,18 @@ hi Tag ctermfg=109 ctermbg=NONE cterm=NONE guifg=#92bfbf guibg=NONE gui=NONE
 hi Title ctermfg=231 ctermbg=NONE cterm=bold guifg=#f1f1f1 guibg=NONE gui=bold
 hi Todo ctermfg=243 ctermbg=NONE cterm=inverse,bold guifg=#777777 guibg=NONE gui=inverse,bold
 hi Type ctermfg=109 ctermbg=NONE cterm=NONE guifg=#92bfbf guibg=NONE gui=NONE
+
+hi pythonFunctionCall ctermfg=215 ctermbg=NONE cterm=NONE
+hi pythonClassVar ctermfg=215 ctermbg=NONE cterm=NONE
+hi pythonBuiltinObj ctermfg=109 ctermbg=NONE cterm=NONE
+hi pythonBuiltinFunc ctermfg=215 ctermbg=NONE cterm=NONE
+hi pythonDecorator ctermfg=215 ctermbg=NONE cterm=NONE
+
+hi markdownCode ctermfg=148
+hi markdownListMarker ctermfg=215
+hi markdownBold ctermfg=228 ctermbg=NONE cterm=bold
+hi markdownItalic ctermfg=228 ctermbg=NONE cterm=italic
+
 hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
 hi rubyClass ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi rubyFunction ctermfg=109 ctermbg=NONE cterm=NONE guifg=#92bfbf guibg=NONE gui=NONE
@@ -117,18 +100,26 @@ hi rubyRailsMethod ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE 
 hi erubyDelimiter ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi erubyComment ctermfg=243 ctermbg=NONE cterm=NONE guifg=#777777 guibg=NONE gui=NONE
 hi erubyRailsMethod ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
+
+hi htmlH1 ctermfg=109 ctermbg=NONE
+hi htmlH2 ctermfg=109 ctermbg=NONE
+hi htmlH3 ctermfg=109 ctermbg=NONE
+hi htmlH4 ctermfg=109 ctermbg=NONE
 hi htmlTag ctermfg=150 ctermbg=NONE cterm=NONE guifg=#b4d388 guibg=NONE gui=NONE
 hi htmlEndTag ctermfg=150 ctermbg=NONE cterm=NONE guifg=#b4d388 guibg=NONE gui=NONE
 hi htmlTagName ctermfg=150 ctermbg=NONE cterm=NONE guifg=#b4d388 guibg=NONE gui=NONE
 hi htmlArg ctermfg=150 ctermbg=NONE cterm=NONE guifg=#b4d388 guibg=NONE gui=NONE
 hi htmlSpecialChar ctermfg=209 ctermbg=NONE cterm=NONE guifg=#f18260 guibg=NONE gui=NONE
+
 hi javaScriptFunction ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
 hi javaScriptRailsFunction ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi javaScriptBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+
 hi yamlKey ctermfg=109 ctermbg=NONE cterm=NONE guifg=#92bfbf guibg=NONE gui=NONE
 hi yamlAnchor ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi yamlAlias ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi yamlDocumentHeader ctermfg=152 ctermbg=NONE cterm=NONE guifg=#bddcdc guibg=NONE gui=NONE
+
 hi cssURL ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi cssFunctionName ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi cssColor ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
