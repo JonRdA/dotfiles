@@ -12,8 +12,7 @@ let g:colors_name = "predawn"
 
 hi Cursor ctermfg=235 ctermbg=209 cterm=NONE guifg=#282828 guibg=#f18260 gui=NONE
 hi Visual ctermfg=NONE ctermbg=239 cterm=NONE guifg=NONE guibg=#4c4c4c gui=NONE
-hi CursorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3c3c gui=NONE
-hi ColorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3c3c gui=NONE
+hi ColorColumn ctermfg=NONE ctermbg=234 cterm=NONE guifg=NONE guibg=#3c3c3c gui=NONE
 hi LineNr ctermfg=242 ctermbg=234 cterm=NONE guifg=#8d8d8d guibg=#3c3c3c gui=NONE
 hi CursorLineNR ctermfg=231 ctermbg=016 cterm=NONE
 hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -28,20 +27,20 @@ hi PmenuSel ctermfg=NONE ctermbg=239 cterm=NONE guifg=NONE guibg=#4c4c4c gui=NON
 hi IncSearch ctermfg=235 ctermbg=152 cterm=NONE guifg=#282828 guibg=#bddcdc gui=NONE
 hi Search ctermfg=NONE ctermbg=241 cterm=NONE guifg=NONE guibg=#626262 gui=NONE
 hi Directory ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
-hi Folded ctermfg=243 ctermbg=235 cterm=NONE guifg=#777777 guibg=#282828 gui=NONE
+hi Folded ctermfg=242 ctermbg=016 cterm=NONE guifg=#777777 guibg=#282828 gui=NONE
 
 hi Normal ctermfg=253 ctermbg=016 cterm=NONE guifg=#f1f1f1 guibg=#282828 gui=NONE
 hi Boolean ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
 hi Character ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
 hi String ctermfg=148 ctermbg=NONE cterm=NONE
 hi Operator ctermfg=215 ctermbg=NONE cterm=NONE
-hi Comment ctermfg=243 ctermbg=NONE cterm=NONE guifg=#777777 guibg=NONE gui=NONE
+hi Comment ctermfg=242 ctermbg=NONE cterm=NONE guifg=#777777 guibg=NONE gui=NONE
 hi Conditional ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi Constant ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
 hi Define ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi DiffAdd ctermfg=231 ctermbg=64 cterm=bold guifg=#f1f1f1 guibg=#46830d gui=bold
 hi DiffDelete ctermfg=88 ctermbg=NONE cterm=NONE guifg=#8b0808 guibg=NONE gui=NONE
-hi DiffChange ctermfg=231 ctermbg=23 cterm=NONE guifg=#f1f1f1 guibg=#243958 gui=NONE
+hi DiffChange ctermfg=231 ctermbg=23 cterm=NONE guifg=#f1f1f1 guibg=#242958 gui=NONE
 hi DiffText ctermfg=231 ctermbg=24 cterm=bold guifg=#f1f1f1 guibg=#204a87 gui=bold
 hi ErrorMsg ctermfg=167 ctermbg=NONE cterm=NONE guifg=#cf5340 guibg=NONE gui=NONE
 hi WarningMsg ctermfg=167 ctermbg=NONE cterm=NONE guifg=#cf5340 guibg=NONE gui=NONE
@@ -59,7 +58,7 @@ hi Statement ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NO
 hi StorageClass ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
 hi Tag ctermfg=109 ctermbg=NONE cterm=NONE guifg=#92bfbf guibg=NONE gui=NONE
 hi Title ctermfg=231 ctermbg=NONE cterm=bold guifg=#f1f1f1 guibg=NONE gui=bold
-hi Todo ctermfg=NONE ctermbg=234 cterm=bold 
+hi Todo ctermfg=NONE ctermbg=234 cterm=NONE 
 hi Type ctermfg=109 ctermbg=NONE cterm=NONE guifg=#92bfbf guibg=NONE gui=NONE
 
 hi pythonFunctionCall ctermfg=215 ctermbg=NONE cterm=NONE
@@ -98,7 +97,7 @@ hi rubyRailsARMethod ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NON
 hi rubyRailsRenderMethod ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi rubyRailsMethod ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 hi erubyDelimiter ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi erubyComment ctermfg=243 ctermbg=NONE cterm=NONE guifg=#777777 guibg=NONE gui=NONE
+hi erubyComment ctermfg=242 ctermbg=NONE cterm=NONE guifg=#777777 guibg=NONE gui=NONE
 hi erubyRailsMethod ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NONE
 
 hi htmlH1 ctermfg=109 ctermbg=NONE
