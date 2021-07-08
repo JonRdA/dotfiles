@@ -36,11 +36,7 @@ let g:python_highlight_class_vars = 1
 let g:python_highlight_exceptions = 1
 let g:python_highlight_operators = 1
 
-" Code running shortcuts <F1> C, <F2> Python, <F4> both
-map <F2> :w !python3 <CR>
-map <F1> :w !gcc -m64 -std=c99 -pedantic -Wall -Wshadow -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes % -o %< ; ./%< <CR>
-"map <F1> :w !make %< ; ./%< <CR>
-
-" More complex and correct mapping to key <F5> depending on filetype
+" Code running mapping to key <F5> depending on filetype
 autocmd filetype python nnoremap <F5> :w <bar> exec '!clear && python3 '.shellescape('%')<CR>
 autocmd filetype c nnoremap <F5> :w <bar> exec '!clear && gcc '.shellescape('%').' -o '.shellescape('%:r').' -m64 -std=c99 -pedantic -Wall -Wshadow -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes && ./'.shellescape('%:r')<CR>
+autocmd filetype c nnoremap <F5> :w <bar> exec '!clear && gcc '.shellescape('%').' -o '.shellescape('%:r').' -fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow && ./'.shellescape('%:r')<CR>
