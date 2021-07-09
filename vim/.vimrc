@@ -38,5 +38,4 @@ let g:python_highlight_operators = 1
 
 " Code running mapping to key <F5> depending on filetype
 autocmd filetype python nnoremap <F5> :w <bar> exec '!clear && python3 '.shellescape('%')<CR>
-autocmd filetype c nnoremap <F5> :w <bar> exec '!clear && gcc '.shellescape('%').' -o '.shellescape('%:r').' -m64 -std=c99 -pedantic -Wall -Wshadow -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes && ./'.shellescape('%:r')<CR>
-autocmd filetype c nnoremap <F5> :w <bar> exec '!clear && gcc '.shellescape('%').' -o '.shellescape('%:r').' -fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow && ./'.shellescape('%:r')<CR>
+autocmd filetype c nnoremap <F5> :w <bar> exec '!clear && make '.shellescape('%:r').'&& ./'.shellescape('%:r')<CR>
