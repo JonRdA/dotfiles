@@ -11,13 +11,12 @@ endif
 let g:colors_name = "predawn"
 
 hi Cursor ctermfg=235 ctermbg=209 cterm=NONE guifg=#282828 guibg=#f18260 gui=NONE
-hi Visual ctermfg=NONE ctermbg=239 cterm=NONE guifg=NONE guibg=#4c4c4c gui=NONE
+hi Visual ctermfg=NONE ctermbg=238
 hi ColorColumn ctermfg=NONE ctermbg=234 cterm=NONE guifg=NONE guibg=#3c3c3c gui=NONE
 hi LineNr ctermfg=242 ctermbg=234 cterm=NONE guifg=#8d8d8d guibg=#3c3c3c gui=NONE
 hi CursorLineNR ctermfg=231 ctermbg=016 cterm=NONE
 hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
 hi ColorColumn ctermbg=234
-hi Visual ctermfg=NONE ctermbg=234
 hi VertSplit ctermfg=241 ctermbg=241 cterm=NONE guifg=#626262 guibg=#626262 gui=NONE
 hi MatchParen ctermfg=215 ctermbg=NONE cterm=bold guifg=#f49d62 guibg=NONE gui=underline
 hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f1f1f1 guibg=#626262 gui=bold
@@ -58,7 +57,7 @@ hi Statement ctermfg=215 ctermbg=NONE cterm=NONE guifg=#f49d62 guibg=NONE gui=NO
 hi StorageClass ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
 hi Tag ctermfg=109 ctermbg=NONE cterm=NONE guifg=#92bfbf guibg=NONE gui=NONE
 hi Title ctermfg=231 ctermbg=NONE cterm=bold guifg=#f1f1f1 guibg=NONE gui=bold
-hi Todo ctermfg=NONE ctermbg=234 cterm=NONE 
+hi Todo ctermfg=246 ctermbg=236 cterm=NONE 
 hi Type ctermfg=109 ctermbg=NONE cterm=NONE guifg=#92bfbf guibg=NONE gui=NONE
 
 hi pythonFunctionCall ctermfg=215 ctermbg=NONE cterm=NONE
