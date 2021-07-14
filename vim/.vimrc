@@ -1,3 +1,5 @@
+"" +++++++++ Vim Settings +++++++++++
+
 " Indentation, tabs & spaces
 set expandtab           " tabs are spaces
 set softtabstop=4       " number of spaces
@@ -7,6 +9,7 @@ set shiftwidth=4        " tab size for auto indentation
 
 " User interface settings
 set number
+set relativenumber
 set colorcolumn=79
 set cursorline
 colorscheme predawn
@@ -27,6 +30,9 @@ set hidden
 " Redraw only when needed
 set lazyredraw
 
+" Folding
+set foldmethod=syntax
+
 " Python syntax
 let g:python_highlight_builtins = 1
 let g:python_highlight_func_calls = 1
@@ -39,3 +45,6 @@ let g:python_highlight_operators = 1
 " Code running mapping to key <F5> depending on filetype
 autocmd filetype python nnoremap <F5> :w <bar> exec '!clear && python3 '.shellescape('%')<CR>
 autocmd filetype c nnoremap <F5> :w <bar> exec '!clear && make '.shellescape('%:r').'&& ./'.shellescape('%:r')<CR>
+
+" Temporary shortcut for cs50's pset5
+"autocmd filetype c nnoremap <F2> :w <bar> exec '!clear && make speller && ./speller'<CR>
