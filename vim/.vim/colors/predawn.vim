@@ -17,10 +17,10 @@ hi LineNr ctermfg=242 ctermbg=234 cterm=NONE guifg=#8d8d8d guibg=#3c3c3c gui=NON
 hi CursorLineNR ctermfg=231 ctermbg=016 cterm=NONE
 hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
 hi ColorColumn ctermbg=234
-hi VertSplit ctermfg=241 ctermbg=241 cterm=NONE guifg=#626262 guibg=#626262 gui=NONE
+hi VertSplit ctermfg=238 ctermbg=238 cterm=NONE guifg=#626262 guibg=#626262 gui=NONE
 hi MatchParen ctermfg=215 ctermbg=NONE cterm=bold guifg=#f49d62 guibg=NONE gui=underline
-hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f1f1f1 guibg=#626262 gui=bold
-hi StatusLineNC ctermfg=231 ctermbg=241 cterm=NONE guifg=#f1f1f1 guibg=#626262 gui=NONE
+hi StatusLine ctermfg=231 ctermbg=238 cterm=NONE guifg=#f1f1f1 guibg=#626262 gui=bold
+hi StatusLineNC ctermfg=242 ctermbg=234 cterm=NONE guifg=#f1f1f1 guibg=#626262 gui=NONE
 hi Pmenu ctermfg=109 ctermbg=NONE cterm=NONE guifg=#92bfbf guibg=NONE gui=NONE
 hi PmenuSel ctermfg=NONE ctermbg=239 cterm=NONE guifg=NONE guibg=#4c4c4c gui=NONE
 hi IncSearch ctermfg=235 ctermbg=152 cterm=NONE guifg=#282828 guibg=#bddcdc gui=NONE
@@ -126,6 +126,3 @@ hi cssClassName ctermfg=109 ctermbg=NONE cterm=NONE guifg=#92bfbf guibg=NONE gui
 hi cssValueLength ctermfg=228 ctermbg=NONE cterm=NONE guifg=#ecec89 guibg=NONE gui=NONE
 hi cssCommonAttr ctermfg=150 ctermbg=NONE cterm=NONE guifg=#b4d388 guibg=NONE gui=NONE
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-
-hi link NERDTreeDir Normal
-hi link NERDTreeDirSlash Normal
