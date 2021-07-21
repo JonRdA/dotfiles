@@ -35,6 +35,7 @@ set lazyredraw
 
 " Folding
 set foldmethod=syntax
+set foldlevel=20
 
 " Python syntax
 let g:python_highlight_builtins = 1
