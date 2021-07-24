@@ -1,41 +1,41 @@
-"" +++++++++ Vim Settings +++++++++++
+"
+" Vim Settings
+"
+set autoindent          " Indent according to previous line.
+set expandtab           " Use spaces instead of tabs.
+set softtabstop=4       " Tab key indents by 4 spaces.
+set shiftwidth=4        " >> indents by 4 spaces.
 
-" Indentation, tabs & spaces
-set expandtab           " tabs are spaces
-set softtabstop=4       " number of spaces
-set autoindent          " previous line's level
-set shiftwidth=4        " tab size for auto indentation
+set hidden              " Switch between buffers without save first.
+set laststatus=2        " Always show statusline.
 
-" User interface settings
-set number
-set relativenumber
+set showmode            " Show current mode in command-line.
+set showcmd             " Show already typed keys when more are expected.
 
-set colorcolumn=79
-set cursorline
+set incsearch           " Highlight while searching with / or ?.
 
-set laststatus=2
+set showmode            " Show current mode in command-line.
+set showcmd             " Show already typed keys when more are expected.
 
-colorscheme predawn
+set lazyredraw          " Only redraw when necessary.
 
-" Show command in bottom right bar
-set showcmd
+set splitbelow          " Open new windows below the current window.
+set splitright          " Open new windows right of the current window.
 
-" Searching while typing
-set incsearch
+set number              " Line numbering on left side.
+set relativenumber      " Relative numbering of lines.
 
-" Mathing bracket key mappings
-inoremap {<CR> {<CR>}<ESC>O
-inoremap [<CR> [<CR>]<ESC>O
+set cursorline          " Find the current line quickly.
+set colorcolumn=79      " Line limiting column.
 
-" Allow for more than one unsaved buffer
-set hidden
+colorscheme predawn     " Sublime alike color scheme.
 
-" Redraw only when needed
-set lazyredraw
+inoremap {<CR> {<CR>}<ESC>O|     " Open curly: newline + close.
+inoremap [<CR> [<CR>]<ESC>O|     " Open bracket: newline + close.
 
-" Folding
-set foldmethod=syntax
-set foldlevel=20
+
+set foldmethod=syntax       " Folding method.
+set foldlevel=20            " Open file with folds closed.
 
 " Python syntax
 let g:python_highlight_builtins = 1
@@ -50,8 +50,9 @@ let g:python_highlight_operators = 1
 " Code running mapping to key <F5> depending on filetype
 autocmd filetype python nnoremap <F5> :w <bar> exec '!clear && python3 '.shellescape('%')<CR>
 autocmd filetype c nnoremap <F5> :w <bar> exec '!clear && make '.shellescape('%:r').'&& ./'.shellescape('%:r')<CR>
+
 " Temporary shortcut for cs50's pset5
-"autocmd filetype c nnoremap <F2> :w <bar> exec '!clear && make speller && ./speller'<CR>
+autocmd filetype c nnoremap <F2> :w <bar> exec '!clear && make sudoku && ./sudoku'<CR>
 
 " Load files settings
 source ~/.vim/statusline.vim
