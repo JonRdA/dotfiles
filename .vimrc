@@ -33,6 +33,7 @@ colorscheme predawn     " Sublime alike color scheme.
 inoremap {<CR> {<CR>}<ESC>O|     " Open curly: newline + close.
 inoremap [<CR> [<CR>]<ESC>O|     " Open bracket: newline + close.
 
+map q <Nop>|            " Delete recording option
 
 set foldmethod=syntax       " Folding method.
 set foldlevel=20            " Open file with folds closed.
