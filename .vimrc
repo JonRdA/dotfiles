@@ -1,6 +1,9 @@
 "
 " Vim Settings
 "
+
+syntax on               " Activate syntax highlighting.
+
 set autoindent          " Indent according to previous line.
 set expandtab           " Use spaces instead of tabs.
 set softtabstop=4       " Tab key indents by 4 spaces.
