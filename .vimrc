@@ -38,7 +38,7 @@ inoremap [<CR> [<CR>]<ESC>O|     " Open bracket: newline + close.
 
 map q <Nop>|            " Delete recording option
 
-set foldmethod=syntax       " Folding method.
+set foldmethod=indent       " Folding method, indent for Python, rest syntax.
 set foldlevel=20            " Open file with folds closed.
 
 " Python syntax
@@ -52,11 +52,11 @@ let g:python_highlight_operators = 1
 " Define all the different modes
 
 " Code running mapping to key <F5> depending on filetype
-autocmd filetype python nnoremap <F5> :w <bar> exec '!clear && python3 '.shellescape('%')<CR>
+autocmd filetype python nnoremap <F5> :w <bar> exec '!clear && python '.shellescape('%')<CR>
 autocmd filetype c nnoremap <F5> :w <bar> exec '!clear && make '.shellescape('%:r').'&& ./'.shellescape('%:r')<CR>
 
 " Temporary shortcut for cs50's pset5
-autocmd filetype c nnoremap <F2> :w <bar> exec '!clear && make sudoku && ./sudoku'<CR>
+autocmd filetype python nnoremap <F2> :w <bar> exec '!clear && python dna.py small.csv 10.txt'<CR>
 
 " Load files settings
 source ~/.vim/statusline.vim
