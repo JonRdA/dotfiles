@@ -1,5 +1,5 @@
 # Shortcuts
-#alias pr="cd ~/Programming/Projects"
+alias rr="cd ~/KISA/Software\ matemático\ y\ estadístico/R/code/"
 #alias cs50="cd ~/edX/cs50"
 
 # CS50 configuration
@@ -20,7 +20,7 @@ alias la="ls -lahF ${colorflag}"
 
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"
-export LS_COLORS='no=00:fi=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;38;5;240:*.py=38;5;148:*.c=38;5;148:*.h=38;5;148:*.pyc=38;5;240:*md=38;5;228:'
+export LS_COLORS='no=00:fi=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;38;5;240:*.py=38;5;148:*.R=38;5;148:*.c=38;5;148:*.h=38;5;148:*.pyc=38;5;240:*md=38;5;227:'
 
 export LSCOLORS='Gxfxcxdxbxegedabagacad'
 
