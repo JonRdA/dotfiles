@@ -33,8 +33,13 @@ set colorcolumn=79      " Line limiting column.
 
 colorscheme predawn     " Sublime alike color scheme.
 
-inoremap {<CR> {<CR>}<ESC>O|     " Open curly: newline + close.
-inoremap [<CR> [<CR>]<ESC>O|     " Open bracket: newline + close.
+inoremap {<CR> {<CR>}<ESC>O|        " Open curly: newline + close.
+inoremap [<CR> [<CR>]<ESC>O|        " Open bracket: newline + close.
+
+nnoremap <silent> <C-l> <c-w>l|     " Remap split window navigation.
+nnoremap <silent> <C-h> <c-w>h
+nnoremap <silent> <C-k> <c-w>k
+nnoremap <silent> <C-j> <c-w>j
 
 map q <Nop>|            " Delete recording option
 
@@ -53,10 +58,11 @@ let g:python_highlight_operators = 1
 
 " Code running mapping to key <F5> depending on filetype
 autocmd filetype python nnoremap <F5> :w <bar> exec '!clear && python '.shellescape('%')<CR>
+autocmd filetype r nnoremap <F5> :w <bar> exec '!clear && Rscript '.shellescape('%')<CR>
 autocmd filetype c nnoremap <F5> :w <bar> exec '!clear && make '.shellescape('%:r').'&& ./'.shellescape('%:r')<CR>
 
 " Temporary shortcut for cs50's pset5
-autocmd filetype python nnoremap <F2> :w <bar> exec '!clear && python dna.py small.csv 10.txt'<CR>
+autocmd filetype python nnoremap <F2> :w <bar> exec '!clear && python dna.py large.csv 10.txt'<CR>
 
 " Load files settings
 source ~/.vim/statusline.vim
