@@ -66,7 +66,7 @@ hi pythonFunctionCall ctermfg=215 ctermbg=NONE cterm=NONE
 hi pythonClassVar ctermfg=215 ctermbg=NONE cterm=NONE
 hi pythonBuiltinObj ctermfg=109 ctermbg=NONE cterm=NONE
 hi pythonBuiltinFunc ctermfg=215 ctermbg=NONE cterm=NONE
-hi pythonDecorator ctermfg=215 ctermbg=NONE cterm=NONE
+hi pythonDecorator ctermfg=109 ctermbg=NONE cterm=NONE
 
 hi markdownCode ctermfg=148
 hi markdownListMarker ctermfg=215
