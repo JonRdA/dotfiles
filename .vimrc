@@ -29,7 +29,7 @@ set number              " Line numbering on left side.
 set relativenumber      " Relative numbering of lines.
 
 set cursorline          " Find the current line quickly.
-set colorcolumn=79      " Line limiting column.
+set colorcolumn=81      " Line limiting column.
 
 colorscheme predawn     " Sublime alike color scheme.
 
