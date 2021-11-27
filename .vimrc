@@ -2,6 +2,20 @@
 " Vim Settings
 "
 
+" Vundle settings
+set nocompatible              " be iMproved, required
+filetype off                  " required
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tmhedberg/SimpylFold'
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" Regular settings
 syntax on               " Activate syntax highlighting.
 
 set autoindent          " Indent according to previous line.
@@ -43,8 +57,8 @@ nnoremap <silent> <C-j> <c-w>j
 
 map q <Nop>|            " Delete recording option
 
-set foldmethod=indent       " Folding method, indent for Python, rest syntax.
-set foldlevel=20            " Open file with folds closed.
+set foldmethod=syntax       " Folding method, indent for Python, rest syntax.
+set foldlevel=1            " Open file with folds closed.
 
 " Python syntax
 let g:python_highlight_builtins = 1
@@ -57,8 +71,9 @@ let g:python_highlight_operators = 1
 " Define all the different modes
 
 " Code running mapping to key <F5> depending on filetype
-autocmd filetype python nnoremap <F5> :w <bar> exec '!clear && python '.shellescape('%')<CR>
 autocmd filetype r nnoremap <F5> :w <bar> exec '!clear && Rscript '.shellescape('%')<CR>
+autocmd filetype python nnoremap <F5> :w <bar> exec '!clear && python '.shellescape('%')<CR>
+autocmd filetype tex nnoremap <F5> :w <bar> exec '!clear && pdflatex '.shellescape('%')<CR>
 autocmd filetype c nnoremap <F5> :w <bar> exec '!clear && make '.shellescape('%:r').'&& ./'.shellescape('%:r')<CR>
 
 " Temporary shortcut for cs50's pset5
