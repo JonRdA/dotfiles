@@ -58,7 +58,7 @@ nnoremap <silent> <C-j> <c-w>j
 map q <Nop>|            " Delete recording option
 
 set foldmethod=syntax       " Folding method, indent for Python, rest syntax.
-set foldlevel=1            " Open file with folds closed.
+set foldlevel=0             " Open file with folds closed.
 
 " Python syntax
 let g:python_highlight_builtins = 1
