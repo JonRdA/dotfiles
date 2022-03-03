@@ -47,13 +47,19 @@ set colorcolumn=81      " Line limiting column.
 
 colorscheme predawn     " Sublime alike color scheme.
 
-inoremap {<CR> {<CR>}<ESC>O|        " Open curly: newline + close.
-inoremap [<CR> [<CR>]<ESC>O|        " Open bracket: newline + close.
+"inoremap {<CR> {<CR>}<ESC>O|        " Open curly: newline + close.
+"inoremap [<CR> [<CR>]<ESC>O|        " Open bracket: newline + close.
 
 nnoremap <silent> <C-l> <c-w>l|     " Remap split window navigation.
 nnoremap <silent> <C-h> <c-w>h
 nnoremap <silent> <C-k> <c-w>k
 nnoremap <silent> <C-j> <c-w>j
+
+" Vim hard mode
+noremap h <NOP>
+"noremap j <NOP>
+"noremap k <NOP>
+noremap l <NOP>
 
 map q <Nop>|            " Delete recording option
 
