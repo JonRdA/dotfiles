@@ -3,6 +3,9 @@
 
 [ -n "$PS1" ]
 
+# Vi mode in Bash
+set -o vi
+
 # Load dotfiles:
 for file in ~/.{bash_prompt,aliases}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
