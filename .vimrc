@@ -12,6 +12,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'JuliaEditorSupport/julia-vim'
+Plugin 'jpalardy/vim-slime'
+"Plugin 'christoomey/vim-tmux-navigator'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -74,16 +77,25 @@ let g:python_highlight_string_formatting = 1
 let g:python_highlight_class_vars = 1
 let g:python_highlight_exceptions = 1
 let g:python_highlight_operators = 1
-" Define all the different modes
 
 " Code running mapping to key <F5> depending on filetype
-autocmd filetype r nnoremap <F5> :w <bar> exec '!clear && Rscript '.shellescape('%')<CR>
-autocmd filetype python nnoremap <F5> :w <bar> exec '!clear && python '.shellescape('%')<CR>
-autocmd filetype tex nnoremap <F5> :w <bar> exec '!clear && pdflatex '.shellescape('%')<CR>
-autocmd filetype c nnoremap <F5> :w <bar> exec '!clear && make '.shellescape('%:r').'&& ./'.shellescape('%:r')<CR>
+autocmd filetype r nmap <F5> :w <bar> exec '!clear && Rscript '.shellescape('%')<CR>
+autocmd filetype r imap <F5> <esc>:w<bar> exec '!clear && Rscript '.shellescape('%')<CR>
 
-" Temporary shortcut for cs50's pset5
-autocmd filetype python nnoremap <F2> :w <bar> exec '!clear && python dna.py large.csv 10.txt'<CR>
+autocmd filetype python nmap <F5> :w<bar> exec '!clear && python3 '.shellescape('%')<CR>
+autocmd filetype python imap <F5> <esc>:w<bar> exec '!clear && python3 '.shellescape('%')<CR>
+
+autocmd filetype julia nmap <F5> :w<bar>exec '!clear && julia '.shellescape('%')<CR>
+autocmd filetype julia imap <F5> <esc>:w<bar> exec '!clear && julia '.shellescape('%')<CR>
+
+autocmd filetype tex nmap <F5> :w <bar> exec '!clear && pdflatex '.shellescape('%')<CR>
+autocmd filetype c nmap <F5> :w <bar> exec '!clear && make '.shellescape('%:r').'&& ./'.shellescape('%:r')<CR>
 
 " Load files settings
 source ~/.vim/statusline.vim
+
+
+
+let g:slime_target = "tmux"
+let g:slime_paste_file = "$HOME/.slime_paste"
+let g:slime_default_config = {"socket_name": get(split($TMUX, ","), 0), "target_pane": ":.1"}
