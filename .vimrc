@@ -21,6 +21,9 @@ filetype plugin indent on    " required
 " Regular settings
 syntax on               " Activate syntax highlighting.
 
+set timeoutlen=1000
+set ttimeoutlen=20
+
 set autoindent          " Indent according to previous line.
 set expandtab           " Use spaces instead of tabs.
 set softtabstop=4       " Tab key indents by 4 spaces.
@@ -59,10 +62,10 @@ nnoremap <silent> <C-k> <c-w>k
 nnoremap <silent> <C-j> <c-w>j
 
 " Vim hard mode
-noremap h <NOP>
+"noremap h <NOP>
 "noremap j <NOP>
 "noremap k <NOP>
-noremap l <NOP>
+"noremap l <NOP>
 
 map q <Nop>|            " Delete recording option
 
@@ -79,8 +82,11 @@ let g:python_highlight_exceptions = 1
 let g:python_highlight_operators = 1
 
 " Code running mapping to key <F5> depending on filetype
-autocmd filetype r nmap <F5> :w <bar> exec '!clear && Rscript '.shellescape('%')<CR>
-autocmd filetype r imap <F5> <esc>:w<bar> exec '!clear && Rscript '.shellescape('%')<CR>
+autocmd filetype sh nmap <F5> :w <bar> exec '!clear && sh '.shellescape('%')<CR>
+autocmd filetype sh imap <F5> <esc>:w<bar> exec '!clear && sh '.shellescape('%')<CR>
+
+"autocmd filetype r nmap <F5> :w <bar> exec '!clear && Rscript '.shellescape('%')<CR>
+"autocmd filetype r imap <F5> <esc>:w<bar> exec '!clear && Rscript '.shellescape('%')<CR>
 
 autocmd filetype python nmap <F5> :w<bar> exec '!clear && python3 '.shellescape('%')<CR>
 autocmd filetype python imap <F5> <esc>:w<bar> exec '!clear && python3 '.shellescape('%')<CR>
@@ -88,13 +94,11 @@ autocmd filetype python imap <F5> <esc>:w<bar> exec '!clear && python3 '.shelles
 autocmd filetype julia nmap <F5> :w<bar>exec '!clear && julia '.shellescape('%')<CR>
 autocmd filetype julia imap <F5> <esc>:w<bar> exec '!clear && julia '.shellescape('%')<CR>
 
-autocmd filetype tex nmap <F5> :w <bar> exec '!clear && pdflatex '.shellescape('%')<CR>
-autocmd filetype c nmap <F5> :w <bar> exec '!clear && make '.shellescape('%:r').'&& ./'.shellescape('%:r')<CR>
+"autocmd filetype tex nmap <F5> :w <bar> exec '!clear && pdflatex '.shellescape('%')<CR>
+"autocmd filetype c nmap <F5> :w <bar> exec '!clear && make '.shellescape('%:r').'&& ./'.shellescape('%:r')<CR>
 
 " Load files settings
 source ~/.vim/statusline.vim
-
-
 
 let g:slime_target = "tmux"
 let g:slime_paste_file = "$HOME/.slime_paste"
