@@ -1,11 +1,16 @@
 # Shortcuts
-alias rr="cd ~/KISA/Software\ matemático\ y\ estadístico/R/code/"
-#alias cs50="cd ~/edX/cs50"
+alias dckr="cd ~/zylk/tasks/220328\ Docker/"
+alias tfm="cd ~/KISA/TFM/code"
+alias bdgt="cd ~/code/budget/src"
+
+alias nifistart="sudo sh ~/software/nifi-1.15.3/bin/nifi.sh start"
+alias nifistop="sudo sh ~/software/nifi-1.15.3/bin/nifi.sh stop"
+alias nifistatus="sudo sh ~/software/nifi-1.15.3/bin/nifi.sh status"
 
 # CS50 configuration
-export CC="clang"
-export CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow"
-export LDLIBS="-lcrypt -lcs50 -lm"
+#export CC="clang"
+#export CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow"
+#export LDLIBS="-lcrypt -lcs50 -lm"
 
 
 # Detect which `ls` flavor is in use
@@ -20,7 +25,7 @@ alias la="ls -lahF ${colorflag}"
 
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"
-export LS_COLORS='no=00:fi=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;38;5;240:*.py=38;5;148:*.R=38;5;148:*.c=38;5;148:*.h=38;5;148:*.pyc=38;5;240:*md=38;5;227:'
+export LS_COLORS='no=00:fi=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;38;5;240:*.py=38;5;148:*.R=38;5;148:*.c=38;5;148:*.h=38;5;148:*.jl=38;5;148:*.pyc=38;5;240:*md=38;5;227:'
 
 export LSCOLORS='Gxfxcxdxbxegedabagacad'
 
