@@ -3,9 +3,12 @@ alias dckr="cd ~/zylk/tasks/220328\ Docker/"
 alias tfm="cd ~/KISA/TFM/code"
 alias bdgt="cd ~/code/budget/src"
 
-alias nifistart="sudo sh ~/software/nifi-1.15.3/bin/nifi.sh start"
-alias nifistop="sudo sh ~/software/nifi-1.15.3/bin/nifi.sh stop"
-alias nifistatus="sudo sh ~/software/nifi-1.15.3/bin/nifi.sh status"
+alias nifistart="sh ~/software/nifi-1.16.3/bin/nifi.sh start"
+alias nifistop="sh ~/software/nifi-1.16.3/bin/nifi.sh stop"
+alias nifistatus="sh ~/software/nifi-1.16.3/bin/nifi.sh status"
+alias nifistart_old="sh ~/software/nifi-1.15.3/bin/nifi.sh start"
+alias nifistop_old="sh ~/software/nifi-1.15.3/bin/nifi.sh stop"
+alias nifistatus_old="sh ~/software/nifi-1.15.3/bin/nifi.sh status"
 
 # CS50 configuration
 #export CC="clang"
